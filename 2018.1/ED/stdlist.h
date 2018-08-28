@@ -36,7 +36,7 @@ Item *Item_Novo(){
     //ponteiro do tipo 'Item'
     printf("ID\t");
     scanf("%d", &item->id);
-    //Adicionar a partir daqui os comandos de atribuição dos atributos adicionais.
+    //Adicionar a partir daqui os comandos de atribuição dos atributos adicionais, se houver.
     return item;
 }
 
@@ -137,7 +137,7 @@ Nodo *Lista_Remover_Final(Nodo *lista){
             ant = temp;
             temp = temp->prox;
         }
-        ant->prox = temp->prox; //Vai ser NULL, mas questões de segurança, preferi assim.
+        ant->prox = temp->prox; //Vai ser NULL, mas por questões de segurança, preferi assim.
         return temp;
     }
 }
